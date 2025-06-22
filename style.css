@@ -1,0 +1,119 @@
+body{
+    background: #000;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: 'GoudyRegular';
+    src: url('./fonts/OFLGoudyStM.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'GoudyItalic';
+    src: url('./fonts/OFLGoudyStM-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+#video{
+    /* height: 80vh; */
+    width: 80vw;
+    aspect-ratio: 1300/734;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    /* border: red 2px solid; */
+}
+.text{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: 'GoudyRegular', serif;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 80vw;
+    font-size: 1.5rem;
+}
+.fade-bottom {
+    height: 30%;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+    align-self: flex-end;
+  }
+.video-container{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    place-items: stretch;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.video-container > * {
+    grid-area: 1 / 1;
+  }
+.images{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    width: 80%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.images > img{
+    height: 11rem;
+}
+#para-2{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 3rem;
+    padding-top:2rem;
+}
+#para-2 > h2{
+    display: inline;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 20rem;
+}
+.ending{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+.last-img{
+    size: 12rem;
+}
+.links > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 0.5rem; /* fixed spacing */
+    font-size: 1.2rem; /* increased size */
+}
+
+.links > a i {
+    font-size: 1.5rem; /* make the icon slightly larger */
+    color: white;
+}
